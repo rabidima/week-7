@@ -1,0 +1,31 @@
+@font-face{
+	font-family: bilboard;
+	src: url(erbos_draco_1st_nbp.ttf);
+}
+
+th, tr{
+	text-align: center;
+	color: yellow;
+}
+th{
+	background-color: white;
+	color: black;
+}
+
+#infoDiv{
+	font-size: 16px;
+	padding: 0px;
+	font-family: bilboard;
+	background-color: black;
+	color: white;
+}
+.form-group{
+	color: white;
+}
+.panel{
+	font-family: none;
+	background-color: black;
+}
+.panel-title {
+		font-family: 'Bungee Inline', cursive;
+}

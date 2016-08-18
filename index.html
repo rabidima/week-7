@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Train schedule by Dmitri</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<div class="container">
+	<div class="jumbotron">
+		<h1 class="panel-title text-center"">Train Schedule</h1>
+		<p class="panel-title text-center">by Dmitri</p>
+		<div class="row">
+			<div class="container col-lg-10 col-md-10">
+				<div class="panel panel-default">
+					<div class="panel-title">
+						<h3 class="panel-title text-center">Curent Train Schedule</h3>
+						<p  class="text-center" id="timeNow"></p>
+					</div>
+						<div class="panel-body" id="infoDiv">
+						<table id="infoTable" class="table table-bordered">
+							<thead>
+								<tr>
+									<th>Train Name</th>
+									<th>Destination</th>
+									<th>Frequency</th>
+									<th>Next Arrival</th>
+									<th>Minutes Away</th>
+								</tr>
+							</thead>
+							<tbody id="currentData" class="text-center"></tbody>
+						</table>
+						</div>
+				</div>
+			</div>	
+
+<div class="container col-lg-2 col-md-2">
+				<div class="panel panel-default">
+			      <div class="panel-heading">
+			        <h3 class="panel-title">Add Train</h3>
+			      </div>
+
+			      <div class="panel-body">
+			        <form role="form">
+			          <div class="form-group">
+			            <label for="trainName">Train Name</label>
+			            <input type="text" class="form-control" id="trainName">
+			          </div>
+
+			          <div class="form-group">
+			            <label for="destination">Destination</label>
+			            <input type="text" class="form-control" id="destination">
+			          </div>
+ 					 
+ 					  <div class="form-group">
+			            <label for="firstTime">First Train Time(HH:mm -military time)</label>
+			            <input  type="number" class="form-control" id="firstTime">
+			          </div>
+
+			          <div class="form-group">
+			            <label for="frequency">Frequency</label>
+			            <input  type="number" class="form-control" id="frequency">
+			          </div>
+
+			         
+			          <button type="button" class="btn btn-primary" id="submit">Submit</button>
+
+			        </form>
+			      </div>
+			</div>		
+
+		<!-- ----- -->
+			
+
+<!-- Div row -->
+		</div>
+			
+		<!-- <div class="container">
+			<div class="panel text-center">
+				<address>
+				  <strong>Full Name</strong><br>
+				  <a href="mailto:#">first.last@example.com</a>
+				</address>
+			</div>
+		</div>		 -->
+	</div>
+</div> 	
+
+ <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ <script type="text/javascript" src="assets/script/moment-with-locales.min.js"></script>
+ <script type="text/javascript" src="assets/script/java.js"></script>
+</body>
+</html>
+
